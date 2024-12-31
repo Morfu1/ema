@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pisicute Haioase</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img id="lightbox-img" src="" alt="Imagine mare">
+    </div>
+
+    <header>
+        <h1>Bun venit pe site-ul lui Ema: Pisicute Haioase</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showSection('acasa')">Acasă</a></li>
+            <li><a href="#" onclick="showSection('galerie')">Galerie</a></li>
+            <li><a href="#" onclick="showSection('contact')">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="acasa" class="page active">
+            <h2>Galerie Pisicuțe Drăgălașe</h2>
+            <div class="galerie-pisici">
+                <div class="pisica">
+                    <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba" 
+                         alt="Pisicuță 1" 
+                         onclick="openLightbox(this.src)">
+                    <p>Pisicuța Somnoroasă</p>
+                </div>
+                <div class="pisica">
+                    <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5" 
+                         alt="Pisicuță 2" 
+                         onclick="openLightbox(this.src)">
+                    <p>Pisicuța Curioasă</p>
+                </div>
+                <div class="pisica">
+                    <img src="https://images.unsplash.com/photo-1495360010541-f48722b34f7d" 
+                         alt="Pisicuță 3" 
+                         onclick="openLightbox(this.src)">
+                    <p>Pisicuța Jucăușă</p>
+                </div>
+                <div class="pisica">
+                    <img src="https://images.unsplash.com/photo-1533743983669-94fa5c4338ec" 
+                         alt="Pisicuță 4" 
+                         onclick="openLightbox(this.src)">
+                    <p>Pisicuța Elegantă</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galerie" class="page">
+            <h2>Alte Pisicuțe</h2>
+            <p>Mai multe poze cu pisicuțe în curând...o sa adaug eu, Ema, cu Anghelus, cu Ra si cu matusa lor Dezy</p>
+        </section>
+
+        <section id="contact" class="page">
+            <h2>Contact</h2>
+            <div class="contact-container">
+                <div class="imagine-container">
+                    <img src="ema_angel.jpeg" alt="Ema Pisicuta" class="poza-eric">
+                    <p class="descriere">Ema Pisicuta - Pasionată de pisici și animăluțe</p>
+                </div>
+                <div class="imagine-container">
+                    <img src="ema2.jpeg" alt="Ema Pisicuta" class="poza-eric">
+                    <p class="descriere">Ema iubeste pisicile</p>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Pisici Haioase. Toate drepturile rezervate.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
